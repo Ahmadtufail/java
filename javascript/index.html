@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+   <div id="text1">This is Java script Class</div>
+   <button onclick="fun();">Dynamic</button>
+   
+<br><br>
+<div id="text2">This is Java script Class</div>
+<button onclick="math();">Dynamic</button>
+<br><br>
+<div id="text3">This is Java script Class</div>
+<button onclick="math1();">Dynamic</button>
+<br><br>
+
+<img id="img1" src="gallery pic/1.png">
+<button onclick="document.getElementById('img1').src='gallery pic/2.png';">Change img</button>
+
+   <script type="text/javascript">
+     function fun(){
+        document.getElementById('text1').innerHTML=Date();
+document.getElementById('text1').style.color='Blue';
+document.getElementById('text1').style.fontSize='30px';
+     }
+     function math(){
+
+        var x=55;
+        var y=56;
+        var z=88;
+        document.getElementById('text2').innerHTML=x+y+z;
+document.getElementById('text2').style.color='Blue';
+document.getElementById('text2').style.fontSize='30px';
+     }
+ 
+function math2(){
+
+var x=55;
+var y=56;
+var b=x+y;
+document.getElementById('text3').innerHTML=b;
+document.getElementById('text3').style.color='Blue';
+document.getElementById('text3').style.fontSize='30px';
+}
+   </script>
+</body>
+</html>
